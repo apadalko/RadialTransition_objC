@@ -118,15 +118,46 @@ static float defaultAnimationTime = 0.33;
 #pragma mark - swipe 
 
 -(void)enableRadialSwipe{
-    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.interactivePopGestureRecognizer.enabled = NO;
+    
+  
+    [self enableGesture:YES];
+
+}
+-(void)disableRadialSwipe{
+    
+    [self enableGesture:NO];
+    
+}
+-(void)enableGesture:(BOOL)enable{
+    
+    
+    
+    static NSMutableDictionary * recDictionary=nil;
+    if (!recDictionary) {
+        recDictionary=[[NSMutableDictionary alloc]init];
     }
     
+    if (enable) {
+        if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+            self.interactivePopGestureRecognizer.enabled = NO;
+        }
+         UIScreenEdgePanGestureRecognizer * panGesture = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(screenPan:)];
+            panGesture.edges=UIRectEdgeLeft;
+
+        
+        [recDictionary setValue:panGesture forKey:self.description];
+        
+       
+        
+        [self.view addGestureRecognizer:panGesture];
+    }else {
+     
+        [self.view removeGestureRecognizer:[recDictionary valueForKey:self.description]];
+        [recDictionary removeObjectForKey:self.description];
+       // panGesture = nil;
+        
+    }
     
-    UIScreenEdgePanGestureRecognizer * panGesture=[[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(screenPan:)];
-  
-    panGesture.edges=UIRectEdgeLeft;
-    [self.view addGestureRecognizer:panGesture];
 }
 
 

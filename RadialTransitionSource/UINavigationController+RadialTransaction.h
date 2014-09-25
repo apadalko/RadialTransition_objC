@@ -66,5 +66,6 @@
  *
  */
 -(void)enableRadialSwipe;
+-(void)disableRadialSwipe;
 
 @end
