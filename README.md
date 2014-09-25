@@ -6,8 +6,7 @@ Transition for navigation controller, with custom back swipe.
 
 Demo
 ----
-
-demo
+![alt tag](https://github.com/apadalko/RadialTransition_objC / radilaDemo_long.gif)
 
 
 Example 
