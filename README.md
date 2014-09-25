@@ -61,3 +61,7 @@ ios 7 +,xcode 5+
 
 Futher Work
 ---
+-add TabbarController transaction
+-add radial circle options (shadow,color etc)
+-other improvements
+
