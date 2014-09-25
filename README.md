@@ -11,6 +11,10 @@ Demo
 
 Usage 
 ----
+just import
+```  objc
+#import "UINavigationController+RadialTransaction.h"
+```
 for push simple use
 ```  objc
  [self.navigationController radialPushViewController:[[UIViewController alloc]init] comlititionBlock:^{
