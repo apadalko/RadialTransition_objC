@@ -17,39 +17,39 @@ just import
 ```
 for push simple use
 ```  objc
- [self.navigationController radialPushViewController:[[UIViewController alloc]init] comlititionBlock:^{
+[self.navigationController radialPushViewController:[[UIViewController alloc]init] comlititionBlock:^{
         
-    }];
+}];
  //or   
- [self.navigationController radialPushViewController:[[UIViewController alloc]init] withDuration:1 comlititionBlock:^{
+[self.navigationController radialPushViewController:[[UIViewController alloc]init] withDuration:1 comlititionBlock:^{
         
-    }];
+}];
  //or  
- [self.navigationController radialPushViewController:[[UIViewController alloc]init] withDuration:1 withStartFrame:CGRectMake(self.view.frame.size.width, 0, 0, 0) comlititionBlock:^{
+[self.navigationController radialPushViewController:[[UIViewController alloc]init] withDuration:1 withStartFrame:CGRectMake(self.view.frame.size.width, 0, 0, 0) comlititionBlock:^{
         
-    }];
+}];
 ```
 for pop  use
 ```  objc
-   [self.navigationController radialPopViewControllerWithComlititionBlock:^{
+[self.navigationController radialPopViewControllerWithComlititionBlock:^{
         
-    }];
+}];
  //or
- [self.navigationController radialPopViewControllerWithDuration:0.9 comlititionBlock:^{
+[self.navigationController radialPopViewControllerWithDuration:0.9 comlititionBlock:^{
         
-    }];
+}];
  //or   
- [self.navigationController radialPopViewControllerWithDuration:0.9 withStartFrame:CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height, 0, 0) comlititionBlock:^{
+[self.navigationController radialPopViewControllerWithDuration:0.9 withStartFrame:CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height, 0, 0) comlititionBlock:^{
         
-    }];
+}];
 ```
 to enable swipe to back just use
 ```  objc
-   [self.navigationController enableRadialSwipe];
+[self.navigationController enableRadialSwipe];
 ```
 if you want to change back swipe speed you may set new default duration
 ```  objc
- [UINavigationController setDefaultRadialAnimationTime:11];
+[UINavigationController setDefaultRadialAnimationTime:11];
 ```
 Requirements
 ---
