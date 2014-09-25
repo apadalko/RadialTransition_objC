@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8B7C7D119D385B900EA3D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7D019D385B900EA3D24 /* main.m */; };
+		B8B7C7D419D385B900EA3D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7D319D385B900EA3D24 /* AppDelegate.m */; };
+		B8B7C7DC19D385B900EA3D24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C7DB19D385B900EA3D24 /* Images.xcassets */; };
+		B8B7C7DF19D385BA00EA3D24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C7DD19D385BA00EA3D24 /* LaunchScreen.xib */; };
+		B8B7C7EB19D385BA00EA3D24 /* RadialTransitionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7EA19D385BA00EA3D24 /* RadialTransitionExampleTests.m */; };
+		B8B7C7FB19D385C400EA3D24 /* AAPTransactionDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7F619D385C400EA3D24 /* AAPTransactionDirector.m */; };
+		B8B7C7FC19D385C400EA3D24 /* UINavigationController+RadialTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7F819D385C400EA3D24 /* UINavigationController+RadialTransaction.m */; };
+		B8B7C7FD19D385C400EA3D24 /* UIView+Radial.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7FA19D385C400EA3D24 /* UIView+Radial.m */; };
+		B8B7C80019D3860E00EA3D24 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7FF19D3860E00EA3D24 /* FirstViewController.m */; };
+		B8B7C80219D3865B00EA3D24 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C80119D3865B00EA3D24 /* FirstViewController.xib */; };
+		B8B7C80619D3871800EA3D24 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C80419D3871800EA3D24 /* SecondViewController.m */; };
+		B8B7C80719D3871800EA3D24 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C80519D3871800EA3D24 /* SecondViewController.xib */; };
+		B8B7C80919D38B8A00EA3D24 /* Yoda-Art-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C80819D38B8A00EA3D24 /* Yoda-Art-Wallpaper.jpg */; };
+		B8B7C80E19D3914C00EA3D24 /* star-wars_00409801.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C80D19D3914C00EA3D24 /* star-wars_00409801.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8B7C7E519D385BA00EA3D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8B7C7C319D385B900EA3D24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8B7C7CA19D385B900EA3D24;
+			remoteInfo = RadialTransitionExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8B7C7CB19D385B900EA3D24 /* RadialTransitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadialTransitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B7C7CF19D385B900EA3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B7C7D019D385B900EA3D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8B7C7D219D385B900EA3D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8B7C7D319D385B900EA3D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8B7C7DB19D385B900EA3D24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B8B7C7DE19D385BA00EA3D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B8B7C7E419D385BA00EA3D24 /* RadialTransitionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadialTransitionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B7C7E919D385BA00EA3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B7C7EA19D385BA00EA3D24 /* RadialTransitionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadialTransitionExampleTests.m; sourceTree = "<group>"; };
+		B8B7C7F519D385C400EA3D24 /* AAPTransactionDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPTransactionDirector.h; sourceTree = "<group>"; };
+		B8B7C7F619D385C400EA3D24 /* AAPTransactionDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPTransactionDirector.m; sourceTree = "<group>"; };
+		B8B7C7F719D385C400EA3D24 /* UINavigationController+RadialTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RadialTransaction.h"; sourceTree = "<group>"; };
+		B8B7C7F819D385C400EA3D24 /* UINavigationController+RadialTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RadialTransaction.m"; sourceTree = "<group>"; };
+		B8B7C7F919D385C400EA3D24 /* UIView+Radial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Radial.h"; sourceTree = "<group>"; };
+		B8B7C7FA19D385C400EA3D24 /* UIView+Radial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Radial.m"; sourceTree = "<group>"; };
+		B8B7C7FE19D3860D00EA3D24 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B8B7C7FF19D3860E00EA3D24 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B8B7C80119D3865B00EA3D24 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		B8B7C80319D3871800EA3D24 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B8B7C80419D3871800EA3D24 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B8B7C80519D3871800EA3D24 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		B8B7C80819D38B8A00EA3D24 /* Yoda-Art-Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Yoda-Art-Wallpaper.jpg"; sourceTree = "<group>"; };
+		B8B7C80D19D3914C00EA3D24 /* star-wars_00409801.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "star-wars_00409801.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8B7C7C819D385B900EA3D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B7C7E119D385BA00EA3D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8B7C7C219D385B900EA3D24 = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7CD19D385B900EA3D24 /* RadialTransitionExample */,
+				B8B7C7E719D385BA00EA3D24 /* RadialTransitionExampleTests */,
+				B8B7C7CC19D385B900EA3D24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8B7C7CC19D385B900EA3D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7CB19D385B900EA3D24 /* RadialTransitionExample.app */,
+				B8B7C7E419D385BA00EA3D24 /* RadialTransitionExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8B7C7CD19D385B900EA3D24 /* RadialTransitionExample */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C80A19D38B9200EA3D24 /* resources */,
+				B8B7C7F419D385C400EA3D24 /* RadialTransitionSource */,
+				B8B7C7D219D385B900EA3D24 /* AppDelegate.h */,
+				B8B7C7D319D385B900EA3D24 /* AppDelegate.m */,
+				B8B7C80F19D3919200EA3D24 /* pages */,
+				B8B7C7DB19D385B900EA3D24 /* Images.xcassets */,
+				B8B7C7DD19D385BA00EA3D24 /* LaunchScreen.xib */,
+				B8B7C7CE19D385B900EA3D24 /* Supporting Files */,
+			);
+			path = RadialTransitionExample;
+			sourceTree = "<group>";
+		};
+		B8B7C7CE19D385B900EA3D24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7CF19D385B900EA3D24 /* Info.plist */,
+				B8B7C7D019D385B900EA3D24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8B7C7E719D385BA00EA3D24 /* RadialTransitionExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7EA19D385BA00EA3D24 /* RadialTransitionExampleTests.m */,
+				B8B7C7E819D385BA00EA3D24 /* Supporting Files */,
+			);
+			path = RadialTransitionExampleTests;
+			sourceTree = "<group>";
+		};
+		B8B7C7E819D385BA00EA3D24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7E919D385BA00EA3D24 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8B7C7F419D385C400EA3D24 /* RadialTransitionSource */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7F519D385C400EA3D24 /* AAPTransactionDirector.h */,
+				B8B7C7F619D385C400EA3D24 /* AAPTransactionDirector.m */,
+				B8B7C7F719D385C400EA3D24 /* UINavigationController+RadialTransaction.h */,
+				B8B7C7F819D385C400EA3D24 /* UINavigationController+RadialTransaction.m */,
+				B8B7C7F919D385C400EA3D24 /* UIView+Radial.h */,
+				B8B7C7FA19D385C400EA3D24 /* UIView+Radial.m */,
+			);
+			name = RadialTransitionSource;
+			path = ../../RadialTransitionSource;
+			sourceTree = "<group>";
+		};
+		B8B7C80A19D38B9200EA3D24 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C80819D38B8A00EA3D24 /* Yoda-Art-Wallpaper.jpg */,
+				B8B7C80D19D3914C00EA3D24 /* star-wars_00409801.jpg */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		B8B7C80F19D3919200EA3D24 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				B8B7C7FE19D3860D00EA3D24 /* FirstViewController.h */,
+				B8B7C7FF19D3860E00EA3D24 /* FirstViewController.m */,
+				B8B7C80119D3865B00EA3D24 /* FirstViewController.xib */,
+				B8B7C80319D3871800EA3D24 /* SecondViewController.h */,
+				B8B7C80419D3871800EA3D24 /* SecondViewController.m */,
+				B8B7C80519D3871800EA3D24 /* SecondViewController.xib */,
+			);
+			name = pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8B7C7CA19D385B900EA3D24 /* RadialTransitionExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8B7C7EE19D385BA00EA3D24 /* Build configuration list for PBXNativeTarget "RadialTransitionExample" */;
+			buildPhases = (
+				B8B7C7C719D385B900EA3D24 /* Sources */,
+				B8B7C7C819D385B900EA3D24 /* Frameworks */,
+				B8B7C7C919D385B900EA3D24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadialTransitionExample;
+			productName = RadialTransitionExample;
+			productReference = B8B7C7CB19D385B900EA3D24 /* RadialTransitionExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8B7C7E319D385BA00EA3D24 /* RadialTransitionExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8B7C7F119D385BA00EA3D24 /* Build configuration list for PBXNativeTarget "RadialTransitionExampleTests" */;
+			buildPhases = (
+				B8B7C7E019D385BA00EA3D24 /* Sources */,
+				B8B7C7E119D385BA00EA3D24 /* Frameworks */,
+				B8B7C7E219D385BA00EA3D24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8B7C7E619D385BA00EA3D24 /* PBXTargetDependency */,
+			);
+			name = RadialTransitionExampleTests;
+			productName = RadialTransitionExampleTests;
+			productReference = B8B7C7E419D385BA00EA3D24 /* RadialTransitionExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8B7C7C319D385B900EA3D24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alex Padalko";
+				TargetAttributes = {
+					B8B7C7CA19D385B900EA3D24 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B8B7C7E319D385BA00EA3D24 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B8B7C7CA19D385B900EA3D24;
+					};
+				};
+			};
+			buildConfigurationList = B8B7C7C619D385B900EA3D24 /* Build configuration list for PBXProject "RadialTransitionExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8B7C7C219D385B900EA3D24;
+			productRefGroup = B8B7C7CC19D385B900EA3D24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8B7C7CA19D385B900EA3D24 /* RadialTransitionExample */,
+				B8B7C7E319D385BA00EA3D24 /* RadialTransitionExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8B7C7C919D385B900EA3D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B7C7DF19D385BA00EA3D24 /* LaunchScreen.xib in Resources */,
+				B8B7C7DC19D385B900EA3D24 /* Images.xcassets in Resources */,
+				B8B7C80919D38B8A00EA3D24 /* Yoda-Art-Wallpaper.jpg in Resources */,
+				B8B7C80219D3865B00EA3D24 /* FirstViewController.xib in Resources */,
+				B8B7C80E19D3914C00EA3D24 /* star-wars_00409801.jpg in Resources */,
+				B8B7C80719D3871800EA3D24 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B7C7E219D385BA00EA3D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8B7C7C719D385B900EA3D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B7C7FC19D385C400EA3D24 /* UINavigationController+RadialTransaction.m in Sources */,
+				B8B7C80019D3860E00EA3D24 /* FirstViewController.m in Sources */,
+				B8B7C7D419D385B900EA3D24 /* AppDelegate.m in Sources */,
+				B8B7C80619D3871800EA3D24 /* SecondViewController.m in Sources */,
+				B8B7C7D119D385B900EA3D24 /* main.m in Sources */,
+				B8B7C7FB19D385C400EA3D24 /* AAPTransactionDirector.m in Sources */,
+				B8B7C7FD19D385C400EA3D24 /* UIView+Radial.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B7C7E019D385BA00EA3D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B7C7EB19D385BA00EA3D24 /* RadialTransitionExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8B7C7E619D385BA00EA3D24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8B7C7CA19D385B900EA3D24 /* RadialTransitionExample */;
+			targetProxy = B8B7C7E519D385BA00EA3D24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8B7C7DD19D385BA00EA3D24 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8B7C7DE19D385BA00EA3D24 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8B7C7EC19D385BA00EA3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B8B7C7ED19D385BA00EA3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8B7C7EF19D385BA00EA3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RadialTransitionExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8B7C7F019D385BA00EA3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RadialTransitionExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8B7C7F219D385BA00EA3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RadialTransitionExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadialTransitionExample.app/RadialTransitionExample";
+			};
+			name = Debug;
+		};
+		B8B7C7F319D385BA00EA3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RadialTransitionExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadialTransitionExample.app/RadialTransitionExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8B7C7C619D385B900EA3D24 /* Build configuration list for PBXProject "RadialTransitionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B7C7EC19D385BA00EA3D24 /* Debug */,
+				B8B7C7ED19D385BA00EA3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8B7C7EE19D385BA00EA3D24 /* Build configuration list for PBXNativeTarget "RadialTransitionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B7C7EF19D385BA00EA3D24 /* Debug */,
+				B8B7C7F019D385BA00EA3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B8B7C7F119D385BA00EA3D24 /* Build configuration list for PBXNativeTarget "RadialTransitionExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B7C7F219D385BA00EA3D24 /* Debug */,
+				B8B7C7F319D385BA00EA3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8B7C7C319D385B900EA3D24 /* Project object */;
+}
