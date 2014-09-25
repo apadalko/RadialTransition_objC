@@ -8,7 +8,7 @@
 
 #import "UINavigationController+RadialTransaction.h"
 #import "UIView+Radial.h"
-#import "AAPTransactionDirector.h"
+#import "AAPTransitionDirector.h"
 
 
 @implementation  UINavigationController(RadialTransaction)
@@ -48,12 +48,12 @@ static float defaultAnimationTime = 0.33;
 
 -(void)radialPushViewController:(UIViewController *)viewController  withDuration:(float)duration withStartFrame:(CGRect)rect  comlititionBlock:(void(^)())block{
     
-    AAPTransactionDirector * a=[[AAPTransactionDirector alloc]init];
+    AAPTransitionDirector * a=[[AAPTransitionDirector alloc]init];
     a.duration=duration;
  
-    a.animBlock=^(id<UIViewControllerContextTransitioning> transactionContext,float time,void(^comlitBlock)() ){
+    a.animBlock=^(id<UIViewControllerContextTransitioning> transitionContext,float time,void(^comlitBlock)() ){
         
-        UIViewController* toViewController = [transactionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+        UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
         [toViewController.view radialAppireanceWithStartFrame:rect duration:time andComplitBLock:comlitBlock];
         
@@ -93,12 +93,12 @@ static float defaultAnimationTime = 0.33;
 }
 -(void)radialPopViewControllerWithDuration:(float)duration withStartFrame:(CGRect)rect comlititionBlock:(void (^)())block{
     
-    AAPTransactionDirector * a=[[AAPTransactionDirector alloc]init];
+    AAPTransitionDirector * a=[[AAPTransitionDirector alloc]init];
     
      a.duration=duration;
-     a.animBlock=^(id<UIViewControllerContextTransitioning> transactionContext,float time,void(^comlitBlock)() ){
+     a.animBlock=^(id<UIViewControllerContextTransitioning> transitionContext,float time,void(^comlitBlock)() ){
         
-         UIViewController* toViewController = [transactionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+         UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
         [toViewController.view radialAppireanceWithStartFrame:rect duration:time andComplitBLock:comlitBlock];
         
     };
@@ -143,7 +143,7 @@ static float defaultAnimationTime = 0.33;
    
     static CGPoint firstTouch;
     static float d=0;
-    static AAPTransactionDirector * animDirector=nil;
+    static AAPTransitionDirector * animDirector=nil;
 
     
 
@@ -151,7 +151,7 @@ static float defaultAnimationTime = 0.33;
         case UIGestureRecognizerStateBegan: {
           
             
-            animDirector=[[AAPTransactionDirector alloc]init];
+            animDirector=[[AAPTransitionDirector alloc]init];
             animDirector.interactive=YES;
             animDirector.duration=defaultAnimationTime;
             [self setDelegate:animDirector];
@@ -161,10 +161,10 @@ static float defaultAnimationTime = 0.33;
             d=sqrtf(powf(self.visibleViewController.view.frame.size.width*2, 2)+powf(self.visibleViewController.view.frame.size.height*2, 2));
             firstTouch=location;
             
-            animDirector.animBlock=^(id<UIViewControllerContextTransitioning> transactionContext,float time,void(^comlitBlock)() ){
+            animDirector.animBlock=^(id<UIViewControllerContextTransitioning> transitionContext,float time,void(^comlitBlock)() ){
                 
                 
-                UIViewController* toViewController = [transactionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+                UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
             
                 CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
                 CGRect maskRect = CGRectMake(location.x-location.x/2, location.y-location.x/2, 0, 0);
@@ -183,9 +183,9 @@ static float defaultAnimationTime = 0.33;
         case UIGestureRecognizerStateChanged: {
             
             
-            animDirector.interactiveUpdateBlock=^(id<UIViewControllerContextTransitioning> transactionContext,float percent){
+            animDirector.interactiveUpdateBlock=^(id<UIViewControllerContextTransitioning> transitionContext,float percent){
                 
-                CAShapeLayer *maskLayer =(CAShapeLayer*)[transactionContext viewControllerForKey:UITransitionContextToViewControllerKey].view.layer.mask;
+                CAShapeLayer *maskLayer =(CAShapeLayer*)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view.layer.mask;
                 float mainD= percent*d;
               
                 

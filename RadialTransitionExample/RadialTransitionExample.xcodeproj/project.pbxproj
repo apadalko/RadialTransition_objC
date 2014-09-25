@@ -12,7 +12,7 @@
 		B8B7C7DC19D385B900EA3D24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C7DB19D385B900EA3D24 /* Images.xcassets */; };
 		B8B7C7DF19D385BA00EA3D24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B7C7DD19D385BA00EA3D24 /* LaunchScreen.xib */; };
 		B8B7C7EB19D385BA00EA3D24 /* RadialTransitionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7EA19D385BA00EA3D24 /* RadialTransitionExampleTests.m */; };
-		B8B7C7FB19D385C400EA3D24 /* AAPTransactionDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7F619D385C400EA3D24 /* AAPTransactionDirector.m */; };
+		B8B7C7FB19D385C400EA3D24 /* AAPTransitionDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7F619D385C400EA3D24 /* AAPTransitionDirector.m */; };
 		B8B7C7FC19D385C400EA3D24 /* UINavigationController+RadialTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7F819D385C400EA3D24 /* UINavigationController+RadialTransaction.m */; };
 		B8B7C7FD19D385C400EA3D24 /* UIView+Radial.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7FA19D385C400EA3D24 /* UIView+Radial.m */; };
 		B8B7C80019D3860E00EA3D24 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7C7FF19D3860E00EA3D24 /* FirstViewController.m */; };
@@ -44,8 +44,8 @@
 		B8B7C7E419D385BA00EA3D24 /* RadialTransitionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadialTransitionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B7C7E919D385BA00EA3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B7C7EA19D385BA00EA3D24 /* RadialTransitionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadialTransitionExampleTests.m; sourceTree = "<group>"; };
-		B8B7C7F519D385C400EA3D24 /* AAPTransactionDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPTransactionDirector.h; sourceTree = "<group>"; };
-		B8B7C7F619D385C400EA3D24 /* AAPTransactionDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPTransactionDirector.m; sourceTree = "<group>"; };
+		B8B7C7F519D385C400EA3D24 /* AAPTransitionDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPTransitionDirector.h; sourceTree = "<group>"; };
+		B8B7C7F619D385C400EA3D24 /* AAPTransitionDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPTransitionDirector.m; sourceTree = "<group>"; };
 		B8B7C7F719D385C400EA3D24 /* UINavigationController+RadialTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RadialTransaction.h"; sourceTree = "<group>"; };
 		B8B7C7F819D385C400EA3D24 /* UINavigationController+RadialTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RadialTransaction.m"; sourceTree = "<group>"; };
 		B8B7C7F919D385C400EA3D24 /* UIView+Radial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Radial.h"; sourceTree = "<group>"; };
@@ -140,8 +140,8 @@
 		B8B7C7F419D385C400EA3D24 /* RadialTransitionSource */ = {
 			isa = PBXGroup;
 			children = (
-				B8B7C7F519D385C400EA3D24 /* AAPTransactionDirector.h */,
-				B8B7C7F619D385C400EA3D24 /* AAPTransactionDirector.m */,
+				B8B7C7F519D385C400EA3D24 /* AAPTransitionDirector.h */,
+				B8B7C7F619D385C400EA3D24 /* AAPTransitionDirector.m */,
 				B8B7C7F719D385C400EA3D24 /* UINavigationController+RadialTransaction.h */,
 				B8B7C7F819D385C400EA3D24 /* UINavigationController+RadialTransaction.m */,
 				B8B7C7F919D385C400EA3D24 /* UIView+Radial.h */,
@@ -281,7 +281,7 @@
 				B8B7C7D419D385B900EA3D24 /* AppDelegate.m in Sources */,
 				B8B7C80619D3871800EA3D24 /* SecondViewController.m in Sources */,
 				B8B7C7D119D385B900EA3D24 /* main.m in Sources */,
-				B8B7C7FB19D385C400EA3D24 /* AAPTransactionDirector.m in Sources */,
+				B8B7C7FB19D385C400EA3D24 /* AAPTransitionDirector.m in Sources */,
 				B8B7C7FD19D385C400EA3D24 /* UIView+Radial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

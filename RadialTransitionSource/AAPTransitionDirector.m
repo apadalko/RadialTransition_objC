@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Alex Padalko. All rights reserved.
 //
 
-#import "AAPTransactionDirector.h"
+#import "AAPTransitionDirector.h"
 #import "UIView+Radial.h"
-@interface AAPTransactionDirector(){
+@interface AAPTransitionDirector(){
     
      id<UIViewControllerContextTransitioning> _context;
      CADisplayLink *_displayLink;
 }
 @end
-@implementation AAPTransactionDirector
+@implementation AAPTransitionDirector
 
 
 

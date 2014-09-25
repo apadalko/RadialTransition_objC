@@ -11,11 +11,11 @@
 
 
 
-typedef void(^UpdateBlock)(id<UIViewControllerContextTransitioning> transactionContext,float precent);
-typedef void(^AnimationBlock)(id<UIViewControllerContextTransitioning> transactionContext,float time,void (^complitBlock)());
+typedef void(^UpdateBlock)(id<UIViewControllerContextTransitioning> transitionContext,float precent);
+typedef void(^AnimationBlock)(id<UIViewControllerContextTransitioning> transitionContext,float time,void (^complitBlock)());
 
 
-@interface AAPTransactionDirector : NSObject<UIViewControllerAnimatedTransitioning,UINavigationControllerDelegate,UIViewControllerInteractiveTransitioning>
+@interface AAPTransitionDirector : NSObject<UIViewControllerAnimatedTransitioning,UINavigationControllerDelegate,UIViewControllerInteractiveTransitioning>
 
 
 
@@ -36,7 +36,7 @@ typedef void(^AnimationBlock)(id<UIViewControllerContextTransitioning> transacti
 
 
 @property (nonatomic)float duration;
-@property (retain,nonatomic)UIView * transactionView;
+
 
 
 
