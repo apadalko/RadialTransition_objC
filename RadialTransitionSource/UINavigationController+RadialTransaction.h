@@ -46,7 +46,7 @@
 
 
 /**
- * radial pushing view controller
+ * radial pop view controller
  *
  * @param startFrame where circle start
  */
