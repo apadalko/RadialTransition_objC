@@ -47,6 +47,10 @@ to enable swipe to back just use
 ```  objc
 [self.navigationController enableRadialSwipe];
 ```
+to disable
+```  objc
+[self.navigationController disableRadialSwipe];
+```
 if you want to change back swipe speed you may set new default duration
 ```  objc
 [UINavigationController setDefaultRadialAnimationTime:11];
