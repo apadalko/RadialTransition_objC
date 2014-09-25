@@ -9,7 +9,7 @@ Demo
 ![alt tag](https://raw.githubusercontent.com/apadalko/RadialTransition_objC/master/radilaDemo_long.gif)
 
 
-Example 
+Usage 
 ----
 for push simple use
 ```  objc
@@ -43,3 +43,13 @@ to enable swipe to back just use
 ```  objc
    [self.navigationController enableRadialSwipe];
 ```
+if you want to change back swipe speed you may set new default duration
+```  objc
+ [UINavigationController setDefaultRadialAnimationTime:11];
+```
+Requirements
+---
+ios 7 +,xcode 5+
+
+Futher Work
+---
